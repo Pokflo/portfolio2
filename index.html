@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@800&display=swap" rel="stylesheet">
+<title>portefolio</title>
+<link rel="stylesheet" href="portefolio.css" />
+
+<body id="body">
+	
+		<nav id="navbar" class="">
+			<div class="nav-wrapper">
+			  <!-- Navbar Logo -->
+			  <div class="logo">
+				<!-- Logo Placeholder for Inlustration -->
+				<a id="Truc" href="#home" ><i class="fa fa-angellist"></i> portfolio</a>
+			  </div>
+		  
+			  <!-- Navbar Links -->
+			  <ul id="menu">
+				<li><a href="#body">Home</a></li><!--
+			 --><li><a href="#project">Project</a></li>
+			 <li><a href="..\code\curriculum.html">CV</a></li>
+			  </ul>
+			</div>
+		  </nav>
+		  
+		  
+		  <!-- Menu Icon -->
+		  <div class="menuIcon">
+			<span class="icon icon-bars"></span>
+			<span class="icon icon-bars overlay"></span>
+		  </div>
+		  
+		  
+		  <div class="overlay-menu">
+			<ul id="menu">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#project">Project</a></li>
+				<li><a href="..\code\curriculum.html">CV</a></li>
+			  </ul>
+		  </div>
+
+	<div class="hero">
+		<p>Think inside the <span>box</span></p>
+		<h1>Developer<span>pokflo</span></h1>
+		<p>I <strong>Design</strong> and <strong>Develope Awesome</strong> stuff</p>
+	</div>
+
+	<nav class="navi">
+		<a href="https://www.linkedin.com/in/florian-verin-4b6b23194" target="_blank" ><img src="C:\Users\TP-WEB\Desktop\dossier partage\code\image\linkedin.png" alt="Linkedin"></a>
+    
+		<img src="C:\Users\TP-WEB\Desktop\dossier partage\code\image\cv_.png" alt="qrcode" class="qr">
+		
+		
+		<a href="https://github.com/Pokflo" target="_blank"><img src="C:\Users\TP-WEB\Desktop\dossier partage\code\image\github.png" alt="GitHub"></a>
+    
+	</nav>
+			<p class="describ">Find my CV by scanning this QR code ;)</p>
+
+	<div class="projects" id="project">
+		<div class="project">
+			<h2>Fake Restaurant Italian</h2>
+			<a href="https://github.com/CVitrant/restau.git" target="_blank">GitHub</a>
+			<p>Project of a fictitious website for an Italian restaurant. Realized in collab in training for the pro title of web and mobile web developer at GRETA . </p>
+		</div>
+	</div>
+  
+  <div class="projects">
+		<div class="project">
+			<h2>Showcase Site</h2>
+			<a href="https://github.com/xavier-lefebvre/EmpireDev.git" target="_blank">GitHub</a>
+			<p>Project of a showcase site for a development company. Realized in collab in training for the pro title of web and mobile web developer at GRETA . </p>
+		</div>
+	</div>
+
+	<div class="projects">
+		<div class="project">
+			<h2>Showcase Site Commerce</h2>
+			<a href="https://github.com/Pokflo/commerce.git" target="_blank">GitHub</a>
+			<p>Fictitious e-commerce website project realized during my JAVA J2EE training at the AFPI of Cambrai.</p>
+		</div>
+	</div>
+	
+</body>
+  
+    <div class="about">
+
+  <div class="contact">
+		  <p>Conctacter-moi!!</p><br>
+		<form action="" method="get" class="form-example">
+			<div class="form-example">
+			  <label for="name">Enter your name: </label>
+			  <input type="text" name="name" id="name" required>
+			</div>
+			<div class="form-example">
+			  <label for="email">Enter your email: </label>
+			  <input type="email" name="email" id="email" required>
+			</div>
+			<div class="form-example">
+			  <input type="submit" value="Submit">
+			</div>
+		  </form>
+	  </div>
+      <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <p class="presenta">
+          Hello, my name is Verin Florian, and I am a web development student at the GRETA grand hainaut of Cambrai.
+        </p>
+      </div>
+	
+    </div>
+	<script>
+		 let menuIcon = document.querySelector('.menuIcon');
+        let nav = document.querySelector('.overlay-menu');
+
+        menuIcon.addEventListener('click', () => {
+            if (nav.style.transform != 'translateX(0%)') {
+                nav.style.transform = 'translateX(0%)';
+                nav.style.transition = 'transform 0.2s ease-out';
+            } else { 
+                nav.style.transform = 'translateX(-100%)';
+                nav.style.transition = 'transform 0.2s ease-out';
+            }
+        });
+
+
+        // Toggle Menu Icon ========================================
+        let toggleIcon = document.querySelector('.menuIcon');
+
+        toggleIcon.addEventListener('click', () => {
+            if (toggleIcon.className != 'menuIcon toggle') {
+                toggleIcon.className += ' toggle';
+            } else {
+                toggleIcon.className = 'menuIcon';
+            }
+        });
+	</script>
+  </body>
+  
+  </html>
